@@ -96,18 +96,20 @@
 - 显示：日期（月/日/周几）+ 时间（时:分）+ 温度
 - **长按编码器** → 进入时间设置（月→日→周→时→分，旋转调值，短按切换，最后一个字段保存）
 - **旋转编码器** → 切换到运动页面
-![alt text](b087be3b65a7dab8298a346d90c09ac5.jpg)
+<img width="810" height="1440" alt="b087be3b65a7dab8298a346d90c09ac5" src="https://github.com/user-attachments/assets/c6dd8f42-4cc5-4be6-83c1-d773d7c69847" />
+
 ### 运动页面
 - 显示：步数 / 距离 / 卡路里
 - **长按编码器** → 清除运动数据（步数归零）
 - **旋转编码器** → 切换到时间页面
-![alt text](cf96a22ac52c6f8272f15687d343f147.jpg)
+<img width="1440" height="810" alt="cf96a22ac52c6f8272f15687d343f147" src="https://github.com/user-attachments/assets/4166fb26-bc80-44fd-9ade-1b192a1c1796" />
+
 ### 计步算法（角度双沿计步算法）
 - 基于MPU6050六轴传感器，`atan2(ax, -ay)`加速度矢量角度特征提取
 - 双沿滞回状态机步态识别（45°抬臂阈值 / 10°放臂阈值）
 - 180ms最小间隔滤波抑制高频抖动噪声
 - 2秒静止超时自动复位状态机，杜绝静态误计数
-- 25Hz传感器采样，结合FreeRTOS任务时序稳定运行
+- 25Hz传感器采样，结合FreeRTOS任务时序稳定运行`
 
 ### 蓝牙上传
 - 运动页面每 2 秒通过 BLE 串口发送数据
@@ -137,10 +139,12 @@
 | 🏃 **运动** | 显示步数、距离、卡路里，支持一键清零 |
 | ❤️ **心率** | 显示实时心率（需手表支持 H 字段协议） |
 | 📋 **历史** | 自动记录运动数据，可清除 |
-![alt text](<屏幕截图 2026-07-10 010853.png>)
-![alt text](<屏幕截图 2026-07-10 010859.png>)
-![alt text](<屏幕截图 2026-07-10 010905.png>)
-![alt text](<屏幕截图 2026-07-10 010910.png>)
+<img width="710" height="1126" alt="屏幕截图 2026-07-10 010853" src="https://github.com/user-attachments/assets/587f2526-31c0-48e3-91c9-e454ff1d9104" />
+<img width="719" height="1122" alt="屏幕截图 2026-07-10 010859" src="https://github.com/user-attachments/assets/94043ed3-0e44-4c8f-b142-8c666ae039d7" />
+<img width="719" height="1132" alt="屏幕截图 2026-07-10 010905" src="https://github.com/user-attachments/assets/21e7e848-43e3-4148-a8f4-bfe808d3d00a" />
+<img width="711" height="1114" alt="屏幕截图 2026-07-10 010910" src="https://github.com/user-attachments/assets/13216e58-443d-4788-a9ba-519af31e89ec" />
+
+
 ## 安装与运行
 
 ### 安装依赖
